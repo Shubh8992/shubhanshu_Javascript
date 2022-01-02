@@ -1,0 +1,20 @@
+<!DOCTYPE html>
+<HTML>
+   <Head>
+       <title>Simple HTML</title>
+       <Script>alert('hello from head tag')
+       //document.getElementById('para1').innerText = "Simple Para modified at head not working";
+       </script>
+       
+   </Head> 
+<body>
+    <script>alert('Body starts')</script>
+    <p id = 'para1'> Simple Paragraph </p>
+    <script>alert('End section of body')
+
+        // id is already defined before fetching the document
+        document.getElementById('para1').innerText = "Simple Para modified at body in the end and working here";
+        
+    </script>
+</body>
+</HTML>

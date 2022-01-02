@@ -1,0 +1,42 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+</head>
+<body>
+    <Script>
+        //ES - 5 vanila JS
+
+        var a = 5;
+        var b =3.6;
+        var ch = 'A';
+        var flag = true;
+        var x;
+        //arrays or Objects
+        var cars = ['nano','maruti','Baleno'];
+
+        document.write('Type of a : ' + typeof(a));//number
+        document.write('</br> Type of b : ' + typeof(b));//number
+        document.write('</br> Type of c : ' + typeof(ch));//string
+        document.write('</br> Type of flag : ' + typeof(flag));//boolean
+        document.write('</br> Type of cars : ' + typeof(cars));//object(arrays are also defined like cars is defined)
+
+        //OBJECT LITERAL SYNTAX - just like we create json file separator here is colon :
+        var obj = {firstname : 'Harry', lastname : 'Potter'} //notice comma and colon
+
+
+        // -------FOR IN Loop-----
+        for(var i in cars){
+            console.log('for in loop - ' + cars[i]);
+        }
+        //--------FOR OF loop
+        for(var car of cars){
+            console.log(car);
+            document.write("</br>" + car + "</br>");
+        }
+    </Script>
+</body>
+</html>

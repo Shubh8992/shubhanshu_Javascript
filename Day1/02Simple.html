@@ -1,0 +1,36 @@
+<!DOCTYPE html>
+<HTML>
+   <Head>
+       <title>Simple HTML</title>
+    <Script>//alert('hello from head tag')
+        
+       //document.getElementById('para1').innerText = "Simple Para modified at head not working";
+
+       // inbuilt object in javascript 
+       //Window object - global object to access browsers window
+       //document - global object to access html document
+
+
+       function foo(){
+           if(document.readyState==="complete")//This will ensure code is executed only once and not every time state changes
+            alert('foo called...');
+            document.getElementById('para1').innerText = "Simple Para modified at head inside function";
+       }
+       //calling function 
+       //foo(); // immediately calling this function will give error as para1 id is not specified
+       //Now invoking foo after window's load event
+
+       //window.onload = foo;//onload is event 
+
+       document.onreadystatechange = foo
+       </script>
+       
+   </Head> 
+<body>
+    <script>//alert('Body starts')</script>
+    <p id = 'para1'> Simple Paragraph </p>
+    <script>
+        //document.getElementById('para1').innerText = "Simple Para modified at body in the end and working here";
+    </script>
+</body>
+</HTML>
