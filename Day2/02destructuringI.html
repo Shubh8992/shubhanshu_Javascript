@@ -1,0 +1,32 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+</head>
+<body>
+    <script>
+        // Array Destructuring
+        let ary = [10,20,30,40,50];
+
+        let a = ary[2], b = ary[4];// without destructuring
+        //console.log(b);
+        
+        //Destructuring
+
+        let [x,y,z] = ary;
+        console.log("x=" + x + " y=" + y + " z=" + z);
+
+        let [p,q,...r] = ary;
+        console.log("p=" + p + " q=" + q + " r=" + r);
+
+        //Object Destructuring
+        let person = {name : 'Ram', age : 20,  city : 'Pune'}
+        let {name,city} = person;//variable name that is city for ex should be same
+    </script>
+</body>
+</html>
+
+
